@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">MyLogo</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#"><img src="home.png" alt="Home" class="nav-icon">Home</a></li>
+        <li><a href="#"><img src="about.png" alt="About" class="nav-icon">About</a></li>
+        <li><a href="#"><img src="contact.png" alt="Contact" class="nav-icon">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">Menu</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Our Website</h1>
+      <p>Your journey starts here. Explore what we offer!</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow us on:</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
